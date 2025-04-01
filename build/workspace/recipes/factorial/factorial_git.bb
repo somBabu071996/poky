@@ -20,7 +20,7 @@ SRCREV = "27134a05d6b5aa06a474bc0002f6541550ac51e0"
 
 S = "${WORKDIR}/git"
 
-EXTRA_OEMAKE = "PREFIX=${D}${bindir} CC='${CC}' CFLAGS='${CFLAGS}' LDFLAGS='${LDFLAGS}'"
+EXTRA_OEMAKE = "PREFIX=${D}${bindir} CC='${CC}' CFLAGS='${CFLAGS} -Wl,--hash-style=gnu' LDFLAGS='${LDFLAGS}'"
 
 
 # NOTE: this is a Makefile-only piece of software, so we cannot generate much of the
